@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-20",
+  "tools": {
+    "Bandit": "1.8.6/Python3.13",
+    "Zizmor": "1.16.3",
+    "Gitleaks": "8.30.1",
+    "pip-audit": "2.9.0"
+  },
+  "configuration": "default rules; no suppressions; gitleaks redact=100",
+  "bandit": null,
+  "secret_matches": [
+    {
+      "scan": "gitleaks-history.json",
+      "matches": []
+    },
+    {
+      "scan": "gitleaks-tree.json",
+      "matches": []
+    }
+  ],
+  "not_applicable": [
+    "language SAST",
+    "dependency graph",
+    "workflow scan"
+  ],
+  "scope": "all scaffold source files"
+}
