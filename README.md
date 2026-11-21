@@ -21,7 +21,9 @@ Replacing a source file or editing publication context invalidates its earlier v
 
 Use [mapping issue #56](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification/issues/56) as the semantic foundation. JATS, HTML and DOI outputs should reuse reviewed source/context values while reporting target-specific omissions and conflicts. Keep the paper, dataset and metadata record distinct, including their creators, identifiers, dates and versions. DOI registration metadata is agency-specific; preparing an export does not register a DOI or authorize publication.
 
-Begin with FHR. Other types require demonstrated contract, toolkit and binding support. FHT/FHGM retain their own release/adoption gates.
+Begin with FHR. Other types require demonstrated contract, toolkit and binding support. FHT and native FHGM contracts are separately published, but this scaffold has
+no implemented integration for them. Contract publication alone does not deliver
+a Janeway binding or plugin.
 
 ## Work plan
 
@@ -46,7 +48,10 @@ No installation command or supported runtime matrix exists yet. See [discovery i
 
 Implementation should reuse pinned toolkit capabilities; preserve source bytes and source/context provenance; bound jobs, decompression and parsing; keep confidential review files permission-controlled; disable XML external-entity/network resolution; and test the actual JATS-to-HTML rendering path. Every generated table/report must identify the approved input revision and relevant tool/schema/profile versions.
 
-Contribute through linked, reviewable PRs with validation evidence. Do not introduce FH* core fields or claim draft mappings are released as incidental plugin work.
+Contribute through linked PRs with validation evidence and independent review
+by another actual model (another family preferred). A human alone merges.
+Agents never enable auto-merge, enter a merge queue or substitute a default-branch
+push. See [AGENTS.md](AGENTS.md) and [the maintenance audit](docs/ROUND16-MAINTENANCE.md). Do not introduce FH* core fields or claim draft mappings are released as incidental plugin work.
 
 ## License and provenance
 
